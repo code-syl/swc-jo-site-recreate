@@ -39,6 +39,7 @@ nav.navigation-menu a {
   font-weight: bold;
   background-color: rgba(200, 200, 200, 0.2);
   padding: 0.25em;
+  text-decoration: none;
 }
 nav.navigation-menu a:hover {
   background-color: rgba(43, 188, 9, 0.2);
