@@ -1,4 +1,4 @@
-.intro, .fleet-overview {
+.intro, .biographies, .fleet-overview, .jedi-order {
   display: flex;
   flex-direction: column;
 
@@ -25,7 +25,7 @@
   }
 }
 
-.intro-fluff {
+.intro-fluff, .jedi-text {
   margin-left: 1rem;
   margin-right: 1rem;
   display: flex;
@@ -43,10 +43,18 @@
   display: none;
 }
 
+.jedi-image {
+  width: 15em;
+}
+
 @media only screen and (max-width: 762px) {
-  .intro-fluff {
+  .intro-fluff, .jedi-text {
     flex-direction: column;
     align-items: center;
+  }
+
+  .jedi-text {
+    margin-left: 0;
   }
 
   .russ-intro {

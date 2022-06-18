@@ -1,26 +1,26 @@
-.intro, .fleet-overview {
+.intro, .biographies, .fleet-overview, .jedi-order {
   display: flex;
   flex-direction: column;
 }
-.intro h1, .fleet-overview h1 {
+.intro h1, .biographies h1, .fleet-overview h1, .jedi-order h1 {
   margin-bottom: 0;
 }
-.intro table, .fleet-overview table {
+.intro table, .biographies table, .fleet-overview table, .jedi-order table {
   border: none;
 }
-.intro table img, .fleet-overview table img {
+.intro table img, .biographies table img, .fleet-overview table img, .jedi-order table img {
   margin: 1rem;
 }
-.intro .ship-image, .fleet-overview .ship-image {
+.intro .ship-image, .biographies .ship-image, .fleet-overview .ship-image, .jedi-order .ship-image {
   border-radius: 60%;
   height: 15em;
   margin-right: 1rem;
 }
-.intro td.ship-cell, .fleet-overview td.ship-cell {
+.intro td.ship-cell, .biographies td.ship-cell, .fleet-overview td.ship-cell, .jedi-order td.ship-cell {
   width: 50%;
 }
 
-.intro-fluff {
+.intro-fluff, .jedi-text {
   margin-left: 1rem;
   margin-right: 1rem;
   display: flex;
@@ -38,10 +38,17 @@
   display: none;
 }
 
+.jedi-image {
+  width: 15em;
+}
+
 @media only screen and (max-width: 762px) {
-  .intro-fluff {
+  .intro-fluff, .jedi-text {
     flex-direction: column;
     align-items: center;
+  }
+  .jedi-text {
+    margin-left: 0;
   }
   .russ-intro {
     flex-direction: column;
