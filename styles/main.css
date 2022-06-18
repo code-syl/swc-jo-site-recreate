@@ -63,12 +63,23 @@ nav.navigation-menu #secondary a {
   font-size: 14px;
 }
 
-table th {
+table th, table td.header {
   color: gold;
   font-size: 20px;
+  text-align: center;
+  margin-bottom: 0.2em;
 }
 table td {
   color: #2bbc09;
+}
+
+a.goto-top {
+  color: gold;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
 }
 
 .roleplay-action {

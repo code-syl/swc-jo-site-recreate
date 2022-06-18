@@ -1,20 +1,23 @@
-.intro {
+.intro, .fleet-overview {
   display: flex;
   flex-direction: column;
 }
-.intro h1 {
+.intro h1, .fleet-overview h1 {
   margin-bottom: 0;
 }
-.intro table {
+.intro table, .fleet-overview table {
   border: none;
 }
-.intro table img {
+.intro table img, .fleet-overview table img {
   margin: 1rem;
 }
-.intro .ship-image {
+.intro .ship-image, .fleet-overview .ship-image {
   border-radius: 60%;
   height: 15em;
   margin-right: 1rem;
+}
+.intro td.ship-cell, .fleet-overview td.ship-cell {
+  width: 50%;
 }
 
 .intro-fluff {
@@ -28,6 +31,11 @@
 .russ-intro {
   display: flex;
   flex-direction: row;
+  margin-left: 1rem;
+}
+
+.mobile-ship {
+  display: none;
 }
 
 @media only screen and (max-width: 762px) {
@@ -37,9 +45,22 @@
   }
   .russ-intro {
     flex-direction: column;
+    margin-left: 0;
   }
   .russ-intro img {
     align-self: center;
+  }
+  td.ship-cell {
+    display: none;
+  }
+  .mobile-ship {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  .ship-info {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: calc(100% - 2rem);
   }
 }
 

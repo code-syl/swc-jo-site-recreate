@@ -1,4 +1,4 @@
-.intro {
+.intro, .fleet-overview {
   display: flex;
   flex-direction: column;
 
@@ -19,6 +19,10 @@
     height: 15em;
     margin-right: 1rem;
   }
+
+  td.ship-cell {
+    width: 50%;
+  }
 }
 
 .intro-fluff {
@@ -32,6 +36,11 @@
 .russ-intro {
   display: flex;
   flex-direction: row;
+  margin-left: 1rem;
+}
+
+.mobile-ship {
+  display: none;
 }
 
 @media only screen and (max-width: 762px) {
@@ -42,9 +51,26 @@
 
   .russ-intro {
     flex-direction: column;
+    margin-left: 0;
 
     img {
       align-self: center;
     }
+  }
+
+  td.ship-cell {
+    display: none;
+  }
+
+  .mobile-ship {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .ship-info {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    width: calc(100% - 2rem);
   }
 }
