@@ -1,0 +1,60 @@
+$main-background: #c8c8c8;
+$green: #2bbc09;
+$yellow: gold;
+
+body {
+  background-image: url("../assets/images/background.png");
+  margin: 0;
+}
+
+.main-content {
+  width: calc(100% / 2.5);
+  margin: auto;
+
+  background-color: rgba($main-background, 0.06);
+}
+
+.banner {
+  width: 100%;
+  margin-bottom: 0.75em;
+}
+
+p {
+  color: $green;
+  font-size: 16px;
+}
+
+h1 {
+  color: $yellow;
+  text-align: center;
+}
+
+p, h1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+nav.navigation-menu {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+
+  a {
+    color: $yellow;
+    font-weight: bold;
+    background-color: rgba($main-background, 0.2);
+    padding: 0.25em;
+
+    &:hover {
+      background-color: rgba($green, 0.2);
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 762px) {
+  .main-content {
+    width: 100% !important;
+    margin: 0;
+  }
+}

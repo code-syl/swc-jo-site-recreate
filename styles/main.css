@@ -1,0 +1,55 @@
+body {
+  background-image: url("../assets/images/background.png");
+  margin: 0;
+}
+
+.main-content {
+  width: 40%;
+  margin: auto;
+  background-color: rgba(200, 200, 200, 0.06);
+}
+
+.banner {
+  width: 100%;
+  margin-bottom: 0.75em;
+}
+
+p {
+  color: #2bbc09;
+  font-size: 16px;
+}
+
+h1 {
+  color: gold;
+  text-align: center;
+}
+
+p, h1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+nav.navigation-menu {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+nav.navigation-menu a {
+  color: gold;
+  font-weight: bold;
+  background-color: rgba(200, 200, 200, 0.2);
+  padding: 0.25em;
+}
+nav.navigation-menu a:hover {
+  background-color: rgba(43, 188, 9, 0.2);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 762px) {
+  .main-content {
+    width: 100% !important;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

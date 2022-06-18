@@ -1,0 +1,15 @@
+.intro-image {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.intro-message {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.main-content, body {
+  overflow-y: hidden;
+}
+
+/*# sourceMappingURL=homepage.css.map */
