@@ -1,0 +1,50 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  table {
+    border: none;
+
+    img {
+      margin: 1rem;
+    }
+  }
+
+  .ship-image {
+    border-radius: 60%;
+    height: 15em;
+    margin-right: 1rem;
+  }
+}
+
+.intro-fluff {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.russ-intro {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 762px) {
+  .intro-fluff {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .russ-intro {
+    flex-direction: column;
+
+    img {
+      align-self: center;
+    }
+  }
+}

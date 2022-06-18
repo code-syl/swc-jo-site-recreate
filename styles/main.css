@@ -19,9 +19,13 @@ p {
   font-size: 16px;
 }
 
-h1 {
+h1, h2 {
   color: gold;
   text-align: center;
+}
+
+h2 {
+  font-size: 18px;
 }
 
 p, h1 {
@@ -31,19 +35,44 @@ p, h1 {
 
 nav.navigation-menu {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 1em;
+  gap: 0.5em;
 }
-nav.navigation-menu a {
+nav.navigation-menu .nav-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+nav.navigation-menu .nav-row a {
   color: gold;
   font-weight: bold;
   background-color: rgba(200, 200, 200, 0.2);
   padding: 0.25em;
   text-decoration: none;
 }
-nav.navigation-menu a:hover {
+nav.navigation-menu .nav-row a:hover {
   background-color: rgba(43, 188, 9, 0.2);
   cursor: pointer;
+}
+nav.navigation-menu #secondary a {
+  font-size: 14px;
+}
+
+table th {
+  color: gold;
+  font-size: 20px;
+}
+table td {
+  color: #2bbc09;
+}
+
+.roleplay-action {
+  font-style: italic;
 }
 
 @media only screen and (max-width: 762px) {

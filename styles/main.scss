@@ -24,9 +24,13 @@ p {
   font-size: 16px;
 }
 
-h1 {
+h1, h2 {
   color: $yellow;
   text-align: center;
+}
+
+h2 {
+  font-size: 18px;
 }
 
 p, h1 {
@@ -36,21 +40,53 @@ p, h1 {
 
 nav.navigation-menu {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 1em;
+  gap: 0.5em;
 
-  a {
-    color: $yellow;
-    font-weight: bold;
-    background-color: rgba($main-background, 0.2);
-    padding: 0.25em;
-    text-decoration: none;
+  .nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 
-    &:hover {
-      background-color: rgba($green, 0.2);
-      cursor: pointer;
+    a {
+      color: $yellow;
+      font-weight: bold;
+      background-color: rgba($main-background, 0.2);
+      padding: 0.25em;
+      text-decoration: none;
+
+      &:hover {
+        background-color: rgba($green, 0.2);
+        cursor: pointer;
+      }
     }
   }
+
+  #secondary {
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+table {
+  th {
+    color: $yellow;
+    font-size: 20px;
+  }
+
+  td {
+    color: $green;
+  }
+}
+
+.roleplay-action {
+  font-style: italic;
 }
 
 @media only screen and (max-width: 762px) {
