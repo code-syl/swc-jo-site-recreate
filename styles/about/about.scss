@@ -31,6 +31,10 @@
   justify-content: space-around;
 }
 
+.jedi-text {
+  gap: 1em;
+}
+
 .russ-intro {
   display: flex;
   flex-direction: row;
@@ -53,6 +57,7 @@
 
   .jedi-text {
     margin-left: 0;
+    gap: 0;
   }
 
   .russ-intro {
