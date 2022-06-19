@@ -3,11 +3,14 @@
   margin-top: 1em;
 }
 
-.intro-message {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
 .main-content, body {
   overflow-y: hidden;
+}
+
+@media only screen and (max-width: 762px) {
+  .intro-image {
+    width: 100vw;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
 }

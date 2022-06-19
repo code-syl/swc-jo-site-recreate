@@ -8,10 +8,13 @@ body {
 .main-content {
   width: calc(100% / 2.5);
   margin: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
 
   background-color: rgba($main-background, 0.06);
+
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .banner {
@@ -42,6 +45,9 @@ nav.navigation-menu {
   flex-direction: column;
   justify-content: center;
   gap: 0.5em;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   .nav-row {
     display: flex;
@@ -94,6 +100,10 @@ a.goto-top {
   align-self: center;
 }
 
+a:link, a:visited, a:hover, a:active {
+  color: $yellow;
+}
+
 h1.has-goto {
   margin-bottom: 0;
 }
@@ -102,9 +112,38 @@ h1.has-goto {
   font-style: italic;
 }
 
+.small-showcase {
+  width: 6em;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid rgba(white, 0.2);
+  background-color: rgba(white, 0.05);
+  border-radius: 10%;
+  margin: 0.5em;
+
+  img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  h2 {
+    margin-top: 0.25em;
+    margin-bottom: 0;
+  }
+}
+
+// Empty showcase if for 'fixing' flexbox' weird bottom row aligning
+.empty-showcase {
+  height: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 762px) {
   .main-content {
-    width: 100% !important;
-    margin: 0;
+    width: 100%;
   }
 }

@@ -6,24 +6,6 @@
   flex-wrap: wrap;
 }
 
-.small-showcase {
-  width: 6em;
-  text-align: center;
-  padding: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 10%;
-  margin: 0.5em;
-}
-.small-showcase img {
-  width: 100%;
-  aspect-ratio: 1/1;
-}
-.small-showcase h2 {
-  margin-top: 0.25em;
-  margin-bottom: 0;
-}
-
 .tier-details {
   display: flex;
   flex-direction: row;
@@ -34,15 +16,6 @@
 }
 .tier-details h2 {
   margin-top: 0;
-}
-
-.empty-showcase {
-  height: 0;
-  visibility: hidden;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 #rentals, #construction, #management {
