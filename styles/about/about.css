@@ -35,6 +35,9 @@
   flex-direction: row;
   gap: 1rem;
 }
+.russ-intro img {
+  height: 15em;
+}
 
 .mobile-ship {
   display: none;

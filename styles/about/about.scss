@@ -39,6 +39,10 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
+
+  img {
+    height: 15em;
+  }
 }
 
 .mobile-ship {
