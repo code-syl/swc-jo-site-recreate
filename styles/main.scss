@@ -1,6 +1,4 @@
-$main-background: #c8c8c8;
-$green: #2bbc09;
-$yellow: gold;
+@import "variables.scss";
 
 body {
   background-image: url("../assets/images/background.png");
@@ -10,6 +8,8 @@ body {
 .main-content {
   width: calc(100% / 2.5);
   margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   background-color: rgba($main-background, 0.06);
 }
@@ -24,6 +24,10 @@ p {
   font-size: 16px;
 }
 
+small, span {
+   color: $green;
+}
+
 h1, h2 {
   color: $yellow;
   text-align: center;
@@ -31,11 +35,6 @@ h1, h2 {
 
 h2 {
   font-size: 18px;
-}
-
-p, h1 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 nav.navigation-menu {
@@ -50,8 +49,6 @@ nav.navigation-menu {
     justify-content: center;
     text-align: center;
     gap: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
 
     a {
       color: $yellow;
@@ -94,6 +91,11 @@ a.goto-top {
   font-weight: bold;
   font-size: 12px;
   text-align: center;
+  align-self: center;
+}
+
+h1.has-goto {
+  margin-bottom: 0;
 }
 
 .roleplay-action {

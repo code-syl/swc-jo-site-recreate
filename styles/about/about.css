@@ -21,8 +21,6 @@
 }
 
 .intro-fluff, .jedi-text {
-  margin-left: 1rem;
-  margin-right: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -31,7 +29,7 @@
 .russ-intro {
   display: flex;
   flex-direction: row;
-  margin-left: 1rem;
+  gap: 1rem;
 }
 
 .mobile-ship {
@@ -63,11 +61,6 @@
   .mobile-ship {
     display: inline-block;
     margin-bottom: 0.5rem;
-  }
-  .ship-info {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: calc(100% - 2rem);
   }
 }
 

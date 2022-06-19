@@ -6,6 +6,8 @@ body {
 .main-content {
   width: 40%;
   margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: rgba(200, 200, 200, 0.06);
 }
 
@@ -19,6 +21,10 @@ p {
   font-size: 16px;
 }
 
+small, span {
+  color: #2bbc09;
+}
+
 h1, h2 {
   color: gold;
   text-align: center;
@@ -26,11 +32,6 @@ h1, h2 {
 
 h2 {
   font-size: 18px;
-}
-
-p, h1 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 nav.navigation-menu {
@@ -45,8 +46,6 @@ nav.navigation-menu .nav-row {
   justify-content: center;
   text-align: center;
   gap: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
 }
 nav.navigation-menu .nav-row a {
   color: gold;
@@ -80,6 +79,11 @@ a.goto-top {
   font-weight: bold;
   font-size: 12px;
   text-align: center;
+  align-self: center;
+}
+
+h1.has-goto {
+  margin-bottom: 0;
 }
 
 .roleplay-action {
