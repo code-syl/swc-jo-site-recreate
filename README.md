@@ -10,4 +10,6 @@ The original site and files can be found in `/legacy`.
 
 ## Technologies
 
-The site was built in IntelliJ IDEA, and written in primarily HTML5. The styling is done in SCSS, which was compiled into raw CSS.
+The site was built in IntelliJ IDEA, and written in primarily HTML5. The styling is done in SCSS, which was compiled into raw CSS. 
+
+The banner has been recreated in Photoshop, as are some of the 'SWCombine items' (tier and forums squares with the SWC border).
