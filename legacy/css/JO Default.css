@@ -1,0 +1,58 @@
+/*---JO Drop-down base---*/
+
+#nav{
+list-style:none;
+font-weight:bold;
+margin-bottom:10px;
+float:left;
+width:100%;
+position:relative;
+z-index:5;}
+
+#nav li{
+float:left;
+margin-left:10px;
+position:relative;}
+
+#nav a{
+display:block;
+padding:5px;
+color:gold;
+background:#333;
+text-decoration:none;}
+
+#nav a:hover{
+color:gold;
+background:#2bbc09;
+text-decoration:underline;}
+
+/*---JO Drop-down menu guts---*/
+#nav ul{
+background:#fff;
+background:rgba(255,255,255,0);
+list-style:none;
+position:absolute;
+left:-9999px;}
+
+#nav ul li{
+padding-top:1px;
+float:none;}
+
+#nav ul a{
+white-space:nowrap;}
+
+#nav li:hover ul{
+left:0;} /*---needs to be 0 so the dropdown appears---*/
+
+#nav li:hover a{
+background:##2bbc09;
+text-decoration:none;}
+
+#nav li:hover ul a{
+text-decoration:none;
+position:relative;
+left:-50px;
+top:2px;}
+
+#nav li:hover ul li a:hover{
+background:#2bbc09;}
